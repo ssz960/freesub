@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇶 IQ 01 - xiaohe
-  server: 172.67.174.249
+- name: 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
+  server: 108.160.136.71
   port: 443
   udp: true
   type: vless
-  uuid: 26b35808-f1e1-4b97-8c69-46796f058d8b
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
-  servername: ezaccess-project-9138d4.5f6on.workers.dev
+  servername: cdn8848.776676.xyz
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoicG9pMkt4TDY2TVNtRSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    path: /doc/products/view?ed=2560
     headers:
-      Host: ezaccess-project-9138d4.5f6on.workers.dev
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇶 IQ 01 - xiaohe
+  - 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇶 IQ 01 - xiaohe
+  - 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
