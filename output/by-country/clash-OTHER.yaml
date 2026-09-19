@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 172.64.150.28
+  server: 104.16.72.2
   port: 443
   udp: true
   type: trojan
@@ -16,7 +16,7 @@ proxies:
   ws-opts:
     path: /assignment
 - name: 🌐 其他地区 (Other) 02 - xiaohe
-  server: 172.67.231.254
+  server: 104.16.72.2
   port: 443
   udp: true
   type: trojan
@@ -27,7 +27,22 @@ proxies:
   ws-opts:
     path: /assignment
 - name: 🌐 其他地区 (Other) 03 - xiaohe
-  server: 172.67.231.254
+  server: 104.16.10.117
+  port: 443
+  udp: true
+  type: vless
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  tls: true
+  servername: u.srilankangrill.online
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+- name: 🌐 其他地区 (Other) 04 - xiaohe
+  server: 104.17.121.71
   port: 443
   udp: true
   type: trojan
@@ -37,14 +52,6 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- name: 🌐 其他地区 (Other) 04 - xiaohe
-  server: 172.67.231.254
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
