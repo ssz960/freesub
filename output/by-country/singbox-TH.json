@@ -40,20 +40,22 @@
     {
       "type": "vless",
       "tag": "🇹🇭 泰国 (Thailand) 03 - xiaohe",
-      "server": "104.18.26.90",
-      "server_port": 443,
-      "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
+      "server": "45.77.241.190",
+      "server_port": 8441,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
-        "server_name": "v2ray.simspeedup.com",
-        "insecure": false
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": true
       },
       "transport": {
         "type": "ws",
-        "path": "/ws",
+        "path": "/act/company/intro",
         "headers": {
-          "Host": "v2ray.simspeedup.com"
-        }
+          "Host": "cdn8848.776676.xyz"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
       }
     },
     {
