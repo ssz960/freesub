@@ -4,14 +4,14 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe",
-      "server": "188.42.145.180",
+      "type": "vless",
+      "tag": "🇮🇶 IQ 01 - xiaohe",
+      "server": "104.21.8.63",
       "server_port": 443,
-      "password": "humanity",
+      "uuid": "b19419fa-8009-455b-b059-765e2856883a",
       "tls": {
         "enabled": true,
-        "server_name": "www.volumeroot.com",
+        "server_name": "akbarian34.j9z65ce2uyks.workers.dev",
         "insecure": false,
         "alpn": [
           "http/1.1"
@@ -23,9 +23,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/assignment",
+        "path": "/vl/Q5xRgb8wfW3RTYFIfDA16PzboJrjLuZ9?ed=2560",
         "headers": {
-          "Host": "www.volumeroot.com"
+          "Host": "akbarian34.j9z65ce2uyks.workers.dev"
         }
       }
     },
@@ -34,14 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe"
+        "🇮🇶 IQ 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe"
+        "🇮🇶 IQ 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
