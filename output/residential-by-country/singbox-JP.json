@@ -4,18 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇩🇪 德国 (Germany) 01 (家宽) - xiaohe",
-      "server": "151.101.56.7",
-      "server_port": 443,
-      "password": "MITIVpN",
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe",
+      "server": "37.120.222.70",
+      "server_port": 8082,
+      "uuid": "59c3c1c7-62d0-4707-9d67-5ff9c008591c",
       "tls": {
         "enabled": true,
-        "server_name": "ssl.fastly.com",
+        "server_name": "c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev",
         "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -23,8 +20,9 @@
       },
       "transport": {
         "type": "ws",
+        "path": "/@Marisa_kristi",
         "headers": {
-          "Host": "mitivpn---ss--s---mitivpn-22e.global.ssl.fastly.net"
+          "Host": "c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev"
         }
       }
     },
@@ -33,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇪 德国 (Germany) 01 (家宽) - xiaohe"
+        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪 德国 (Germany) 01 (家宽) - xiaohe"
+        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
