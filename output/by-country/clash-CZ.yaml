@@ -5,32 +5,35 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 153.76.185.86
-  port: 3090
+  server: 172.64.155.209
+  port: 443
   udp: true
   type: vless
-  uuid: b55a33d7-83ee-416a-971e-eaaa0c928043
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
+  uuid: 11e9eea1-b1a9-4f02-a1a1-b24f7664b1cf
+  tls: true
+  servername: ancIEnt-HeaRt-60c5.dPccgIzieB.WoRKers.dEV
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiYW1sczlYWkFHOCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
+    headers:
+      Host: ancient-heart-60c5.dpccgizieb.workers.dev
 - name: 🇨🇿 捷克 (Czech) 02 - xiaohe
-  server: 194.87.59.19
-  port: 2085
+  server: micro-svc-44607f.staging-api-dd63ef.workers.dev
+  port: 443
   udp: true
   type: vless
-  uuid: b55a33d7-83ee-416a-971e-eaaa0c928043
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
-- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
-  server: 153.76.185.152
-  port: 3090
-  udp: true
-  type: vless
-  uuid: b55a33d7-83ee-416a-971e-eaaa0c928043
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
+  uuid: 0439ff62-13b1-4763-aa27-90e4d429366b
+  tls: true
+  servername: micro-svc-44607f.staging-api-dd63ef.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: micro-svc-44607f-mlm.staging-api-dd63ef.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -38,7 +41,6 @@ proxy-groups:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
-  - 🇨🇿 捷克 (Czech) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -46,6 +48,5 @@ proxy-groups:
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
-  - 🇨🇿 捷克 (Czech) 03 - xiaohe
 rules:
 - MATCH,PROXIES
