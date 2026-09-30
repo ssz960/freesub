@@ -19,19 +19,13 @@ proxies:
   cipher: aes-256-gcm
   password: itzvpn@321
 - name: 🇮🇹 意大利 (Italy) 03 - xiaohe
-  server: 57.131.21.102
-  port: 8443
+  server: 89.41.172.85
+  port: 22324
   udp: true
-  type: vless
-  uuid: 69ac162b-1643-4acb-9f49-09d8b0fad609
-  tls: true
-  servername: milan.adaspoloandco.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /RoBeRt
-    headers:
-      Host: milan.adaspoloandco.com
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
 - name: 🇮🇹 意大利 (Italy) 04 - xiaohe
   server: 204.216.216.23
   port: 10086

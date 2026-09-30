@@ -11,7 +11,7 @@ proxies:
   type: hysteria2
   password: 5ec96249-b753-317a-b065-b67ad66b8185
   sni: hk01.kfc-520.com
-  skip-cert-verify: true
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
