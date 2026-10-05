@@ -6,7 +6,7 @@
     {
       "type": "trojan",
       "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "199.232.78.160",
+      "server": "167.82.76.27",
       "server_port": 443,
       "password": "mitivpn",
       "tls": {
@@ -18,13 +18,14 @@
         ],
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
         "type": "ws",
+        "path": "/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/des---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1",
         "headers": {
-          "Host": "mitivpn---deb--s---mitivpn-2.global.ssl.fastly.net"
+          "Host": "mitivpn---deb--s---mitivpn-3.global.ssl.fastly.net"
         }
       }
     },
