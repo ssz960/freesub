@@ -5,22 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇩 印尼 (Indonesia) 01 - xiaohe",
-      "server": "154.21.203.106",
-      "server_port": 46984,
-      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe",
+      "server": "45.13.186.133",
+      "server_port": 443,
+      "uuid": "e937b92c-701f-420e-a621-3eb3b75de467",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.lamer.com.sg",
+        "server_name": "worki.puffixhosting.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "XBntt77MdH3EMkPXibOAO_NSBrL_aqwiLItU98rqlHE",
-          "short_id": "9c3c0f8ec8b4af12"
+          "public_key": "UXJLPiZERc6kP5cJ40BJVlmobrFc2ztp2aHkK1P-UAU",
+          "short_id": "0a816eb58c4e3fd9"
         }
       }
     },
@@ -29,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇩 印尼 (Indonesia) 01 - xiaohe"
+        "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇩 印尼 (Indonesia) 01 - xiaohe"
+        "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
