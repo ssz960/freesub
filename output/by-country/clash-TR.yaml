@@ -18,17 +18,37 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
+- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  server: googol.wookshop.ir
+  port: 17915
+  udp: true
+  type: vless
+  uuid: 439628ee-ef8e-4a3e-ba0f-091b7376dcb8
+  tls: true
+  servername: googol.wookshop.ir
+  skip-cert-verify: false
+- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+  server: 94.184.42.18
+  port: 8880
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: AWVyUgWWLc4G47GNo_bx2w
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
 rules:
 - MATCH,PROXIES
