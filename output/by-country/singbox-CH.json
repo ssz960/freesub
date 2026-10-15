@@ -59,66 +59,20 @@
     {
       "type": "vless",
       "tag": "🇨🇭 瑞士 (Switzerland) 04 - xiaohe",
-      "server": "45.133.151.186",
-      "server_port": 25393,
-      "uuid": "d54a7512-dda3-4218-8ae7-c591d300fd7c",
+      "server": "208.69.78.217",
+      "server_port": 2053,
+      "uuid": "c0dd6d59-1573-43af-8b70-1470b2632a6d",
       "tls": {
         "enabled": true,
-        "server_name": "www.samsung.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "04F4vhrx_H_SHsrsVw1eCpwlysu4kL3hTl9GAr00XkI",
-          "short_id": "bcc707a7148e4a0c"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 05 - xiaohe",
-      "server": "177.3.208.65",
-      "server_port": 443,
-      "uuid": "4f34bc04-479c-49ba-91a8-6bb9ed15031c",
-      "tls": {
-        "enabled": true,
-        "server_name": "tgmansion.site",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vless-il",
-        "headers": {
-          "Host": "tgmansion.site"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 06 - xiaohe",
-      "server": "89.22.224.146",
-      "server_port": 43788,
-      "uuid": "6fbd9bd1-ccd4-4e2f-a918-a0f871965763",
-      "tls": {
-        "enabled": true,
-        "server_name": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev",
-        "insecure": false,
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0",
+          "short_id": "ad86e2d52ff40ebd"
         }
       }
     },
@@ -130,9 +84,7 @@
         "🇨🇭 瑞士 (Switzerland) 01 - xiaohe",
         "🇨🇭 瑞士 (Switzerland) 02 - xiaohe",
         "🇨🇭 瑞士 (Switzerland) 03 - xiaohe",
-        "🇨🇭 瑞士 (Switzerland) 04 - xiaohe",
-        "🇨🇭 瑞士 (Switzerland) 05 - xiaohe",
-        "🇨🇭 瑞士 (Switzerland) 06 - xiaohe"
+        "🇨🇭 瑞士 (Switzerland) 04 - xiaohe"
       ]
     },
     {
@@ -142,9 +94,7 @@
         "🇨🇭 瑞士 (Switzerland) 01 - xiaohe",
         "🇨🇭 瑞士 (Switzerland) 02 - xiaohe",
         "🇨🇭 瑞士 (Switzerland) 03 - xiaohe",
-        "🇨🇭 瑞士 (Switzerland) 04 - xiaohe",
-        "🇨🇭 瑞士 (Switzerland) 05 - xiaohe",
-        "🇨🇭 瑞士 (Switzerland) 06 - xiaohe"
+        "🇨🇭 瑞士 (Switzerland) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

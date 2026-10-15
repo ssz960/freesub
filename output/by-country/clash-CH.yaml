@@ -40,47 +40,17 @@ proxies:
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
-  server: 45.133.151.186
-  port: 25393
+  server: 208.69.78.217
+  port: 2053
   udp: true
   type: vless
-  uuid: d54a7512-dda3-4218-8ae7-c591d300fd7c
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
   tls: true
   reality-opts:
-    public-key: 04F4vhrx_H_SHsrsVw1eCpwlysu4kL3hTl9GAr00XkI
-    short-id: bcc707a7148e4a0c
-  servername: www.samsung.com
-  client-fingerprint: firefox
-- name: 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
-  server: 177.3.208.65
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
-  tls: true
-  servername: tgmansion.site
-  skip-cert-verify: true
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /vless-il
-    headers:
-      Host: tgmansion.site
-- name: 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
-  server: 89.22.224.146
-  port: 43788
-  udp: true
-  type: vless
-  uuid: 6fbd9bd1-ccd4-4e2f-a918-a0f871965763
-  tls: true
-  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-  skip-cert-verify: false
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+    short-id: ad86e2d52ff40ebd
+  servername: www.apple.com
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -90,8 +60,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -101,7 +69,5 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
 rules:
 - MATCH,PROXIES
