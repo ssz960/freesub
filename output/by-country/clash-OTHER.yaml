@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.18.57.149
+  server: freesocks.work
   port: 2052
   udp: true
   type: vless
