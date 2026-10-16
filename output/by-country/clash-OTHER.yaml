@@ -5,16 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: freesocks.work
-  port: 2052
+  server: uk3-2.998998.best
+  port: 443
   udp: true
-  type: vless
-  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
+  type: vmess
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: server22.9966338.xyz
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
+    path: /serhrdftshg
     headers:
-      Host: uwu.blueknightnet.qzz.io
+      Host: server22.9966338.xyz
 proxy-groups:
 - name: PROXIES
   type: select
