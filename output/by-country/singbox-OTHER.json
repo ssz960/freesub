@@ -4,25 +4,21 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "104.16.10.63",
+      "server": "172.64.145.133",
       "server_port": 443,
-      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+      "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "jp3.yohototo.top",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "www.pleadcourt.org",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/tyxyws",
+        "path": "/assignment",
         "headers": {
-          "Host": "jp3.yohototo.top"
+          "Host": "www.pleadcourt.org"
         }
       }
     },
