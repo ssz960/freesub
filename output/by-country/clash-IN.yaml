@@ -28,17 +28,13 @@ proxies:
     headers:
       Host: 13.140.56.100
 - name: 🇮🇳 印度 (India) 03 - xiaohe
-  server: 194.61.31.126
-  port: 2053
+  server: 139.84.132.62
+  port: 443
   udp: true
-  type: vless
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
-  tls: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-    short-id: 9980e0609b0d3891
-  servername: www.apple.com
-  client-fingerprint: chrome
+  type: trojan
+  password: Trojan@82164024
+  sni: 139.84.132.62
+  skip-cert-verify: true
 - name: 🇮🇳 印度 (India) 04 - xiaohe
   server: in002.zestapp778.com
   port: 46362
@@ -49,13 +45,17 @@ proxies:
   servername: in002.zestapp778.com
   skip-cert-verify: false
 - name: 🇮🇳 印度 (India) 05 - xiaohe
-  server: 139.84.132.62
-  port: 443
+  server: 194.61.31.126
+  port: 2053
   udp: true
-  type: trojan
-  password: Trojan@82164024
-  sni: 139.84.132.62
-  skip-cert-verify: true
+  type: vless
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  tls: true
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+    short-id: 9980e0609b0d3891
+  servername: www.apple.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
