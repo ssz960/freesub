@@ -4,29 +4,27 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇦🇱 AL 01 - xiaohe",
-      "server": "104.17.148.22",
-      "server_port": 8443,
-      "password": "uFepQ5r4JSusbY",
+      "type": "vless",
+      "tag": "🇩🇰 丹麦 (Denmark) 01 - xiaohe",
+      "server": "193.233.253.180",
+      "server_port": 8444,
+      "uuid": "a346c521-7a7f-452b-9356-a4893feb5982",
       "tls": {
         "enabled": true,
-        "server_name": "floral-grass-aa1e.dianawpewpek1.workers.dev",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
+        "server_name": "github.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
+          "short_id": ""
         }
       },
       "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "floral-grass-aa1e.dianawpewpek1.workers.dev"
-        }
+        "type": "grpc",
+        "service_name": "GunService"
       }
     },
     {
@@ -34,14 +32,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇱 AL 01 - xiaohe"
+        "🇩🇰 丹麦 (Denmark) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇱 AL 01 - xiaohe"
+        "🇩🇰 丹麦 (Denmark) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
