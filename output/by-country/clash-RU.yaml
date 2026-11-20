@@ -25,16 +25,13 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  server: d-vrutw-don.vktunnel.com
-  port: 443
+  server: 103.88.243.142
+  port: 11592
   udp: true
-  type: vless
-  uuid: d8275e29-e946-4a48-bec6-4402bea6c399
-  flow: xtls-rprx-vision
-  tls: true
-  servername: m-vruaz-ed.mvpstr.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
+  type: hysteria2
+  password: 41edb44c8e
+  sni: srv-17e124.21freedom.net
+  skip-cert-verify: true
 - name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   server: 200.169.179.233
   port: 443
@@ -62,6 +59,21 @@ proxies:
   grpc-opts:
     grpc-service-name: vlgrpc
 - name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
+  server: 193.233.219.98
+  port: 443
+  udp: true
+  type: vless
+  uuid: 265ecca2-4733-49de-b2c9-ed7f0e999655
+  tls: true
+  servername: daily-author.ru
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /api/vless
+    headers:
+      Host: vpn-rating.space
+- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
   server: 147.45.175.81
   port: 443
   udp: true
@@ -87,6 +99,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -98,5 +111,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
 rules:
 - MATCH,PROXIES
