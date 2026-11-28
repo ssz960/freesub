@@ -5,18 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: ifi1.modemjibi.com
-  port: 993
+  server: 85.8.201.186
+  port: 443
   udp: true
   type: vless
-  uuid: 17ead557-8407-42ae-b9a1-f11a869f99c6
+  uuid: 7aa77858-f235-000c-9434-7ab060848b17
+  flow: xtls-rprx-vision
   tls: true
-  servername: ifi1.modemjibi.com.
+  servername: cdn.mornismp.ru
   skip-cert-verify: false
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
 proxy-groups:
 - name: PROXIES
   type: select

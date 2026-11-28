@@ -6,24 +6,18 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-      "server": "ifi1.modemjibi.com",
-      "server_port": 993,
-      "uuid": "17ead557-8407-42ae-b9a1-f11a869f99c6",
+      "server": "85.8.201.186",
+      "server_port": 443,
+      "uuid": "7aa77858-f235-000c-9434-7ab060848b17",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "ifi1.modemjibi.com.",
+        "server_name": "cdn.mornismp.ru",
         "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/"
       }
     },
     {
